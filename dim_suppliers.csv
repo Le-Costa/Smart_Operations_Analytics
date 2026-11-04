@@ -1,0 +1,21 @@
+﻿supplier_id,supplier_name,region,lead_time_days,supplier_rating
+SUP001,Supplier 01,Centro-Oeste,10,4.7
+SUP002,Supplier 02,Sudeste,9,3.2
+SUP003,Supplier 03,Nordeste,20,3.4
+SUP004,Supplier 04,Sul,10,4.3
+SUP005,Supplier 05,Centro-Oeste,3,4.7
+SUP006,Supplier 06,Nordeste,13,4.7
+SUP007,Supplier 07,Nordeste,20,3.7
+SUP008,Supplier 08,Centro-Oeste,12,4.8
+SUP009,Supplier 09,Nordeste,5,4.7
+SUP010,Supplier 10,Centro-Oeste,9,4.9
+SUP011,Supplier 11,Sudeste,18,4.5
+SUP012,Supplier 12,Centro-Oeste,18,4.3
+SUP013,Supplier 13,Centro-Oeste,22,4.1
+SUP014,Supplier 14,Centro-Oeste,19,3.6
+SUP015,Supplier 15,Nordeste,4,4.9
+SUP016,Supplier 16,Nordeste,3,4.9
+SUP017,Supplier 17,Centro-Oeste,18,3.4
+SUP018,Supplier 18,Nordeste,14,3.5
+SUP019,Supplier 19,Sul,7,3.9
+SUP020,Supplier 20,Sul,7,3.8
