@@ -1,0 +1,29 @@
+None of the dimension tables have null values or duplicateds
+
+Production:
+!!!!!
+
+missing values
+actual_completion_date     22
+produced_quantity          20
+
+Inventory: 
+missing values
+inventory_units         30
+
+orders:
+!!Pay attention on the referencial values
+
+missing values
+customer_id                25
+warehouse_id               10
+actual_delivery_date       35
+
+Duplicated Rows:
+12
+
+-------------------------------------------------------------------
+
+Data cleaning:
+
+theres no treatment necessary in the products table
