@@ -1,29 +1,58 @@
-# Smart Operations Analytics — Synthetic Dataset
+# Smart Operations Analytics 🚧
 
-This is a fictional educational dataset for a portfolio project. It contains no real company or personal data.
+> **Status:** em desenvolvimento | *in progress*
 
-## Coverage and files
-- Date coverage: 2024-01-01 through 2025-12-31
-- `dim_products.csv`: product/SKU attributes
-- `dim_suppliers.csv`: supplier attributes and lead time
-- `dim_customers.csv`: customer segments and regions
-- `fact_orders.csv`: order and delivery records
-- `fact_production.csv`: planned vs actual production records
-- `fact_inventory_monthly.csv`: monthly stock snapshots
-- `data_dictionary.xlsx`: column definitions
+Projeto de análise de dados de ponta a ponta para uma **indústria fictícia do setor automotivo** que enfrenta atrasos nas entregas, custos logísticos crescentes, falta ou excesso de estoque e pouca visibilidade sobre seus indicadores operacionais.
 
-## Intentional data quality challenges
-Some files contain missing values, inconsistent capitalization, zero quantities, and duplicate order rows. These are intentional exercises; identify and justify how you treat them.
+O objetivo é centralizar dados de pedidos, produção, estoque, fornecedores e clientes para identificar gargalos, monitorar KPIs e antecipar problemas com previsão de demanda.
 
-## Suggested joins
-- orders.product_id -> products.product_id
-- orders.supplier_id -> suppliers.supplier_id
-- orders.customer_id -> customers.customer_id
-- production.product_id -> products.product_id
-- inventory.product_id -> products.product_id
+**Ferramentas:** Python · pandas · SQL · Power BI · DAX
 
-## Suggested KPIs
-On-time delivery rate, OTIF proxy (where quantity completeness is available), average lead time, late order rate, order value/cost, production schedule adherence, scrap rate, inventory below reorder point, inventory turnover proxy, forecast accuracy.
+<details>
+<summary>🌎 <b>English</b></summary>
+<br>
 
-## Important
-The data is synthetic. Do not present findings as real operational outcomes. Document assumptions and validate KPI definitions before use.
+End-to-end data analytics project for a **fictional automotive manufacturer** facing late deliveries, rising logistics costs, stockouts or overstock, and low visibility of its operational KPIs. The goal is to bring together orders, production, inventory, supplier and customer data to identify bottlenecks, monitor KPIs and anticipate problems with demand forecasting.
+
+**Tools:** Python · pandas · SQL · Power BI · DAX
+
+</details>
+
+---
+
+## 🗺️ Etapas do projeto
+
+- [ ] **Tratamento dos dados (Python):** leitura, análise de nulos, duplicidades e inconsistências *(em andamento)*
+- [ ] **Modelagem (SQL):** modelo dimensional com fato de pedidos e dimensões de produtos, clientes, fornecedores e calendário
+- [ ] **Dashboard (Power BI):** visão executiva, operações e análise detalhada
+- [ ] **Previsão de demanda:** sazonalidade, risco de ruptura de estoque e previsto vs. real
+
+## 📈 KPIs planejados
+
+| Indicador | Objetivo |
+|---|---|
+| OTIF (%) | Entregas no prazo e completas |
+| Lead Time | Tempo entre pedido e entrega |
+| Inventory Turnover | Eficiência do estoque |
+| Stockout Rate | Falta de produtos |
+| Forecast Accuracy | Precisão da previsão de demanda |
+| Cost per Order | Custo operacional por pedido |
+
+---
+
+## 📂 Dados
+
+Base **sintética**, criada para fins de portfólio. Não contém dados reais de empresas ou pessoas.
+
+- Período: 01/01/2024 a 31/12/2025
+- `dim_products.csv`: atributos dos produtos/SKUs
+- `dim_suppliers.csv`: fornecedores e lead time
+- `dim_customers.csv`: segmentos e regiões dos clientes
+- `fact_orders.csv`: pedidos e entregas
+- `fact_production.csv`: produção planejada vs. realizada
+- `fact_inventory_monthly.csv`: posição mensal de estoque
+- `data_dictionary.xlsx`: dicionário de dados
+
+Algumas tabelas têm, de propósito, problemas de qualidade (valores ausentes, capitalização inconsistente, quantidades zeradas e pedidos duplicados). O tratamento de cada um será documentado no projeto.
+
+> Como os dados são sintéticos, os resultados não representam uma operação real.
